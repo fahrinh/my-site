@@ -9,7 +9,7 @@ RSSUri = "feed.xml"
 
 [Author]
   Name = "fahrinh"
-  
+
 [Params]
   AuthorName = "fahrinh"
   AuthorHomepage = "https://fahri.nurul.id"
@@ -27,7 +27,7 @@ RSSUri = "feed.xml"
   DateFormat = "2006-01-02"
   MonthFormat = "2006-01"
   FancyBox = true
-  DisqusShortName = "fahri.nurul.id"
+  DisqusShortName = "fahri-nurul-id"
   GoogleAnalyticsID = "UA-92345605-1"
 
   [Params.Strings]
