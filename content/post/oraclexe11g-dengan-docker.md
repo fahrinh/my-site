@@ -13,6 +13,8 @@ $ docker ps -a
 CONTAINER ID        IMAGE                     COMMAND                  CREATED             STATUS                    PORTS               NAMES
 4fe7a1024ed3        wnameless/oracle-xe-11g   "/bin/sh -c '/usr/..."   5 weeks ago         Exited (137) 4 days ago                       practical_williams
 $ docker start practical_williams
+# or
+$ docker start 4fe7a1024ed3
 ```
 
 Konfigurasi koneksi database :
