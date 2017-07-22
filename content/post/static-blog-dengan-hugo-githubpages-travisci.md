@@ -1,5 +1,5 @@
 ---
-title: "Static Blog dengan Hugo + Github Pages (+ TravisCI)"
+title: "Static Blog dengan Hugo + Github Pages (+ Travis CI + Cloudflare)"
 date: 2017-07-22T21:02:09+07:00
 categories: ["Drafts"]
 tags: ["Hugo", "Github Pages", "Travis CI"]
@@ -9,17 +9,18 @@ toc: true
 
 
 ## Github
-Buat dua repositori di Github :
+- Buat dua repositori di Github :
 
-- Repo sumber konten (hasil dari `hugo new site`) : [github.com/fahrinh/my-site](github.com/fahrinh/my-site)
-- Repo utama web pages (hasil generate `hugo`) : [github.com/fahrinh/fahrinh.github.io](github.com/fahrinh/fahrinh.github.io)
+	- Repo sumber konten (hasil dari `hugo new site`) : https://github.com/fahrinh/my-site
+	- Repo utama web pages (hasil generate `hugo`) : https://github.com/fahrinh/fahrinh.github.io
 
-Buat Personal Access Token di https://github.com/settings/tokens dengan scope `repo`
+- Buat Personal Access Token di https://github.com/settings/tokens dengan scope **repo**. Copy token tersebut ke clipboard.
 
-Copy token tersebut ke clipboard.
+- Pastikan ada file `CNAME` dengan isi custom domain blog pada repo https://github.com/fahrinh/my-site
 
 ## Travis CI
-Buat file konfigurasi `.travis.yml` pada repo https://github.com/fahrinh/my-site/ dengan isi :
+- Buat file konfigurasi `.travis.yml` pada repo https://github.com/fahrinh/my-site/ dengan isi :
+
 ```
 language: go
 
@@ -30,7 +31,10 @@ install:
   - go get github.com/spf13/hugo # This provides the latest version of Hugo to Travis CI
 
 script:
+  - hugo version
   - hugo --theme=hugo-pacman-theme # This commands builds your website on travis
+  - cp CNAME public
+  - ls public
 
 deploy:
   local_dir: public # Default static site output dir for Hugo
@@ -45,7 +49,15 @@ deploy:
     branch: master
 ```
 
-Buat **Environment Variables** `GITHUB_TOKEN` di https://travis-ci.org/fahrinh/my-site/settings dengan value yaitu Personal Acces Token yang sudah dibuat sebelumnya.
+- Buat **Environment Variables** `GITHUB_TOKEN` di https://travis-ci.org/fahrinh/my-site/settings dengan value yaitu Personal Acces Token yang sudah dibuat sebelumnya.
+
+## Cloudflare
+- Setup DNS pertama kali dengan root domain `nurul.id`
+- Ganti nameserver hosting provider Anda dengan nameserver milik Cloudflare
+- Pada **Crypto**, enable **Always use HTTPS** dan **Automatic HTTPS Rewrites**
+
+
+
 
 
 Sumber: https://martinkaptein.github.io/blog/hugo-with-travis-ci-on-gh-pages/
