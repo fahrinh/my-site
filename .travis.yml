@@ -7,6 +7,7 @@ install:
   - go get github.com/spf13/hugo # This provides the latest version of Hugo to Travis CI
 
 script:
+  - hugo version
   - hugo --theme=hugo-pacman-theme # This commands builds your website on travis
 
 deploy:
