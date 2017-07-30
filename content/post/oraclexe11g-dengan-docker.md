@@ -6,7 +6,8 @@ tags: ["Oracle", "Docker"]
 draft: false
 ---
 
-```
+
+{{< codecaption lang="shell">}}
 $ docker pull wnameless/oracle-xe-11g
 $ docker run -d -p 1022:22 -p 1521:1521 -e ORACLE_ALLOW_REMOTE=true wnameless/oracle-xe-11g
 $ docker ps -a
@@ -15,7 +16,9 @@ CONTAINER ID        IMAGE                     COMMAND                  CREATED  
 $ docker start practical_williams
 # or
 $ docker start 4fe7a1024ed3
-```
+{{< /codecaption >}}
+
+<!--more-->
 
 Konfigurasi koneksi database :
 ```

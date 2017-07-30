@@ -1,5 +1,5 @@
 ---
-title: "Static Blog dengan Hugo + Github Pages (+ Travis CI + Cloudflare)"
+title: "Static Blog dengan Hugo, Github Pages (Travis CI, Cloudflare)"
 date: 2017-07-22T21:02:09+07:00
 categories: ["Drafts"]
 tags: ["Hugo", "Github Pages", "Travis CI"]
@@ -8,7 +8,7 @@ toc: true
 ---
 
 
-## Github
+# Github
 - Buat dua repositori di Github :
 
 	- Repo sumber konten (hasil dari `hugo new site`) : https://github.com/fahrinh/my-site
@@ -18,10 +18,12 @@ toc: true
 
 - Pastikan ada file `CNAME` dengan isi custom domain blog pada repo https://github.com/fahrinh/my-site
 
-## Travis CI
+<!--more-->
+
+# Travis CI
 - Buat file konfigurasi `.travis.yml` pada repo https://github.com/fahrinh/my-site/ dengan isi :
 
-```
+{{< codecaption lang="shell">}}
 language: go
 
 go:
@@ -47,11 +49,11 @@ deploy:
   name: "Fahri Nurul Hidayat"
   on:
     branch: master
-```
+{{< /codecaption >}}
 
 - Buat **Environment Variables** `GITHUB_TOKEN` di https://travis-ci.org/fahrinh/my-site/settings dengan value yaitu Personal Acces Token yang sudah dibuat sebelumnya.
 
-## Cloudflare
+# Cloudflare
 - Setup DNS pertama kali dengan root domain `nurul.id`
 - Ganti nameserver hosting provider Anda dengan nameserver milik Cloudflare
 - Pada **Crypto**, enable **Always use HTTPS** dan **Automatic HTTPS Rewrites**
