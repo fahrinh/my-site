@@ -3,6 +3,11 @@ language: go
 go:
   - master # This uses automatically the latest version of go
 
+addons:
+  apt:
+    packages:
+      - python-pygments
+
 install:
   - go get github.com/spf13/hugo # This provides the latest version of Hugo to Travis CI
 
