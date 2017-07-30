@@ -6,12 +6,14 @@ go:
 addons:
   apt:
     packages:
-      - python-pygments
+      # - python-pygments
 
 install:
+  - pip install pygments
   - go get github.com/spf13/hugo # This provides the latest version of Hugo to Travis CI
 
 script:
+  - pip -V
   - hugo version
   - pygmentize -L
   - hugo # This commands builds your website on travis
