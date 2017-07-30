@@ -1,0 +1,53 @@
+BaseURL = "https://fahri.nurul.id/"
+LanguageCode = "en-US"
+HasCJKLanguage = false
+Title = "Fahri NH"
+Theme = "hugo-pacman-theme"
+pygmentsStyle = "default"
+pygmentsUseClasses = true
+RSSUri = "feed.xml"
+
+[Author]
+  Name = "fahrinh"
+
+[Params]
+  AuthorName = "fahrinh"
+  AuthorHomepage = "https://fahri.nurul.id"
+  BottomIntroduce = "قَيِّدُوا الْعِلْمَ بِالْكِتَابِ<br/><small>&#8220;ikatlah ilmu dengan tulisan&#8221;</small>"
+  Description = "this is description"
+  Subtitle = "Plan the Future, Do the Day, Learn the Past"
+  Weibo = ""
+  WeiboID = ""
+  Twitter = "fahri_nh"
+  GitHub = "fahrinh"
+  Facebook = ""
+  LinkIn = ""
+  Imglogo = "img/logo.png"
+  AuthorImg = "img/writing.png"
+  DateFormat = "2006-01-02"
+  MonthFormat = "2006-01"
+  FancyBox = true
+  DisqusShortName = "fahri-nurul-id"
+  GoogleAnalyticsID = "UA-92345605-1"
+
+  [Params.Strings]
+    Search = "Search"
+    PageNotFound = "Page Not Found"
+    ShowSideBar = "Show"
+    HideSideBar = "Hide"
+    Categories = "Categories"
+    Archive = "Archive"
+    Tags = "Tags"
+    TagCloud = "Tag Cloud"
+    Rss = "RSS"
+    TableOfContents = "Table of Contents"
+
+[Menu]
+  [[Menu.Main]]
+    Name = "Home"
+    URL = "/"
+    Weight = 1
+  [[Menu.Main]]
+    Name = "About"
+    URL = "/about"
+    Weight = 2
