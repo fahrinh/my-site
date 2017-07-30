@@ -13,6 +13,7 @@ install:
 
 script:
   - hugo version
+  - pygmentize -L
   - hugo # This commands builds your website on travis
   - cp CNAME public
   - ls public
