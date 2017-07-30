@@ -13,7 +13,7 @@ install:
 
 script:
   - hugo version
-  - hugo --theme=hugo-pacman-theme # This commands builds your website on travis
+  - hugo # This commands builds your website on travis
   - cp CNAME public
   - ls public
 
