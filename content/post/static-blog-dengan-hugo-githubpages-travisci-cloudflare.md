@@ -23,7 +23,7 @@ toc: true
 # Travis CI
 - Buat file konfigurasi `.travis.yml` pada repo https://github.com/fahrinh/my-site/ dengan isi :
 
-{{< codecaption lang="shell">}}
+{{< codecaption lang="yaml">}}
 language: go
 
 go:
