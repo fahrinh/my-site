@@ -1,5 +1,5 @@
 # group: deprecated-2017Q3
-sudo: true
+# sudo: true
 
 language: go
 
@@ -9,15 +9,15 @@ go:
 addons:
   apt:
     packages:
-      - python3
-      - python3-pip
-      - python-dev
-      - libffi-dev
-      - libssl-dev
+      # - python3
+      # - python3-pip
+      # - python-dev
+      # - libffi-dev
+      # - libssl-dev
       # - python-pygments
 
 install:
-  - pip install --user requests[security]
+  # - pip install --user requests[security]
   - pip install --user pygments
   - go get github.com/spf13/hugo # This provides the latest version of Hugo to Travis CI
 
