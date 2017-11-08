@@ -6,6 +6,9 @@ go:
 addons:
   apt:
     packages:
+      - python-dev
+      - libffi-dev
+      - libssl-dev
       # - python-pygments
 
 install:
