@@ -35,7 +35,7 @@ It looks weirder. `<FF><FE>` at the beginning and `^@` between the characters.
 
 What `file` command says ?  
 
-```shell-session
+```shell
 $ file UNKNOWN_TEXT.txt
 UNKNOWN_TEXT.txt: Little-endian UTF-16 Unicode text  
 ```
@@ -44,7 +44,8 @@ The text file is a Little-Endian UTF-16 text and our viewer (iTerm2 on OSX, in t
 ### `hexdump`
 
 If we investigate in more detail using `hexdump` :
-```shell-session
+
+```shell
 $ hexdump UNKNOWN_TEXT.txt
 0000000 ff fe 31 00 7c 00 43 00 65 00 6c 00 6c 00 32 00
 0000010 31 00 7c 00 31 00 32 00 33 00 34 00 7c 00 32 00

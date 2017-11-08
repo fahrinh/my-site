@@ -7,7 +7,7 @@ draft: false
 ---
 
 
-```shell-session
+```shell
 $ docker pull wnameless/oracle-xe-11g
 $ docker run -d -p 1022:22 -p 1521:1521 -e ORACLE_ALLOW_REMOTE=true wnameless/oracle-xe-11g
 $ docker ps -a
