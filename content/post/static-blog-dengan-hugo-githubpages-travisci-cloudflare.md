@@ -30,7 +30,7 @@ go:
   - master # This uses automatically the latest version of go
 
 install:
-  - pip install pygments
+  - pip install --user pygments
   - go get github.com/spf13/hugo # This provides the latest version of Hugo to Travis CI
 
 script:
