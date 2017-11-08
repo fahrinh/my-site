@@ -4,37 +4,37 @@ date = "2017-07-22T16:20:01+07:00"
 title = "Hello World"
 +++
 
-{{< highlight java >}}
+```java
 class HelloWorld {
   static public void main( String args[] ) {
     System.out.println( "Hello World!" );
   }
 }
-{{< /highlight >}}
-
-{{< highlight kotlin >}}
+```
+<hr/>
+```kotlin
 fun main(args : Array<String>) {
     println("Hello, world!")
 }
-{{< /highlight >}}
-
-{{< highlight javascript >}}
+```
+<hr/>
+```javascript
 console.log("Hello World");
-{{< /highlight >}}
-
-{{< highlight elixir >}}
+```
+<hr/>
+```elixir
 defmodule HelloWorld do
   IO.puts "Hello, World!"
 end
-{{< /highlight >}}
-
-{{< highlight go >}}
+```
+<hr/>
+```go
 package main
 import "fmt"
 func main() {
   fmt.Printf("Hello World\n")
 }
-{{< /highlight >}}
+```
 
 <!--more-->
 

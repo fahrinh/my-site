@@ -4,6 +4,9 @@ languageCode = "en-us"
 title = "Fahri NH"
 theme = "hugo-octopress"
 
+pygmentsCodeFences = true
+pygmentsStyle = "monokai"
+
 # Disqus shortcode
 # Disable comments for any individual post by adding "comments: false" in its frontmatter
 # Note it's not under [params] anymore

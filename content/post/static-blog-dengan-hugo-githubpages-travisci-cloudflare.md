@@ -23,7 +23,7 @@ toc: true
 # Travis CI
 - Buat file konfigurasi `.travis.yml` pada repo https://github.com/fahrinh/my-site/ dengan isi :
 
-{{< highlight yaml >}}
+```yaml
 language: go
 
 go:
@@ -50,7 +50,7 @@ deploy:
   name: "Fahri Nurul Hidayat"
   on:
     branch: master
-{{< /highlight >}}
+```
 
 - Buat **Environment Variables** `GITHUB_TOKEN` di https://travis-ci.org/fahrinh/my-site/settings dengan value yaitu Personal Acces Token yang sudah dibuat sebelumnya.
 
