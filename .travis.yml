@@ -17,8 +17,8 @@ addons:
       # - python-pygments
 
 install:
-  - python3 -m pip install requests[security]
-  - python3 -m pip install pygments
+  - pip install --user requests[security]
+  - pip install --user pygments
   - go get github.com/spf13/hugo # This provides the latest version of Hugo to Travis CI
 
 script:
