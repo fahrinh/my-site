@@ -2,6 +2,7 @@
 title: "Java: How To Autodetect The Charset Encoding of A Text File and Remove Byte Order Mark (BOM)"
 date: 2017-11-08T04:42:36+07:00
 categories: ["Java"]
+tags: ["BOM", "Byte Order Mark", "Charset Encoding"]
 draft: false
 toc: true
 ---
